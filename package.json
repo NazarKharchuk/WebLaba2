@@ -1,0 +1,35 @@
+{
+  "name": "laba2web",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview",
+		"format:fix": "prettier --write . --ignore-path .prettierignore",
+		"format": "prettier --check . --ignore-path .prettierignore",
+		"lint": "eslint . --no-error-on-unmatched-pattern --ignore-path .gitignore",
+		"lint:fix": "eslint . --no-error-on-unmatched-pattern -fix --ignore-path .gitignore",
+		"slint": "stylelint \"**/*.css\" --ignore-path .gitignore --aei",
+		"slint:fix": "stylelint \"**/*.css\" --fix --ignore-path .gitignore --aei"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-vercel": "^1.0.0-next.31",
+    "@sveltejs/kit": "next",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-svelte3": "^3.2.1",
+    "prettier": "^2.4.1",
+    "prettier-plugin-svelte": "^2.4.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-recommended-scss": "^4.3.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-scss": "^3.21.0",
+    "svelte": "^3.34.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "@fontsource/fira-mono": "^4.5.0",
+    "@lukeed/uuid": "^2.0.0",
+    "cookie": "^0.4.1"
+  }
+}
